@@ -1,0 +1,157 @@
+
+carprint 'hello'
+a = 10
+a += 2
+print a
+a *= 8
+print a
+print"--------------------------"
+
+cars_list = ["fiesta","xr2","cortina","nova"]
+print cars_list
+print (cars_list [1])
+print (cars_list [-1])
+cars_list [2] = 'Astra'
+print cars_list
+print "append"
+cars_list.append("escort")
+print cars_list
+print "insert"
+cars_list.insert (1,"xr3i")
+print cars_list
+print len (cars_list)
+print "extend"
+cars_list.extend (["maxi","larda"])
+print cars_list
+print"remove"
+cars_list.remove ("maxi")
+print cars_list
+cars_list.append("nova")
+print cars_list
+print"--------------------------"
+
+print"count"
+print cars_list.count("nova")
+print"--------------------------"
+
+import copy
+print "copy import check"
+print"--------------------------"
+
+new_cars_list = copy.deepcopy (cars_list)
+print new_cars_list
+print"--------------------------"
+
+list_num = [10, 20, 30, 40, 50, 60, 70, 80]
+print list_num
+print max (list_num)
+print min (list_num)
+list_num.extend([90, 100])
+print list_num
+print"--------------------------"
+
+list_num.append(25)
+print list_num
+sorted_list_num = sorted(list_num)
+print "sorted_list_num"
+print sorted_list_num
+print "list_num (25 still at the end)"
+print list_num
+print sum(list_num)
+print "--------------------------"
+
+print list_num[0:3]
+print list_num[2:]
+
+print "--------------------------"
+print "deep and shallow copy"
+
+new_num_list = list_num
+print new_num_list
+
+
+new_num_list.append(1001)
+print new_num_list
+print list_num
+
+print list_num[0:4]
+print "----  in ----  true  ------"
+print "xr2" in cars_list
+print " ------------------"
+
+input ("How are you?: ") 
+place = input ("Where are you from?: ")
+print place
+print place [0:3]
+print place[0:8:2]
+print place [2:4]
+
+print(place[2],place[-2])
+
+print place.upper()
+
+print '--------   ZIP Tuple   -------'
+
+
+
+cars_list = ['focus', 'mondeo', 'jeep']
+print cars_list
+retro_cars = ('escort', 'nova', 'astra', 'xr2')
+print retro_cars
+print '---------------------------------'
+
+
+zipped_list = zip(cars_list, retro_cars)
+print zipped_list
+print '---------------------------------'
+
+
+cars_list.append ('Q3')
+print zipped_list
+zipped_list = zip(cars_list, retro_cars)
+print zipped_list
+print '---------------------------------'
+
+
+print "-------------------"
+
+argh = "stop shouting in capitals"
+print argh
+print argh.upper ()
+
+
+
+
+print "-------------------"
+
+a = ("John", "Charles", "Mike")
+b = ("Manager", "Supervisor", "Engineer")
+
+print a
+print b
+
+print "----   ZIP   ----"
+x = zip(a, b)
+print x
+
+city = 'Los Angeles'
+print city.find('x')
+
+
+print"---   dictionary {}    ---"
+fruit_qty = {}
+fruit_qty ['banana'] = 50
+fruit_qty ['apple'] = 78
+fruit_qty ['apricot'] = 40
+print fruit_qty
+fruit_qty ['orange'] = 70
+fruit_qty ['avocado'] = 30
+print fruit_qty
+print fruit_qty ['apricot']
+set_int = {1,2,3,4,5,67,5,4,3,21}
+print set_int
+set_int.add (9.5)
+print set_int
+teachers_set ={'mike', 'steve', 'hunter'}
+
+
